@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QUIZ SENAI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="logo">
+    <img src="img/logoSenai.png" alt="Logo do SENAI" />
+  </header>
+
+  <div class="titulo">
+    <h2>QUIZ DE TRANSMISSÃO FLEXÍVEL</h2>
+  </div>
+
+  <main class="conteudo-jogo">
+    <section class="questionario">
+      <div class="conteudo">
+        <span class="progresso"></span>
+        <span class="pergunta"></span>
+        <div class="respostas"></div>
+
+        <div class="porque">
+          <p><strong>Resposta:</strong></p>
+          <p class="pq"></p>
+        </div>
+      </div>
+
+      <div class="navegacao" aria-label="Navegação entre perguntas">
+        <button id="voltarBtn">⬅️ Voltar</button>
+        <button id="avancarBtn">➡️ Avançar</button>
+      </div>
+    
+        <div class="fim" style="display: none;">
+            <span></span>
+        </div>
+    </section>
+   </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

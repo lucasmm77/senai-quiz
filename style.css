@@ -1,0 +1,237 @@
+body {
+  background-image: url("https://www.abecom.com.br/wp-content/uploads/2021/03/Corrente-de-transmissao.jpg"); /* Substitua com o link direto da imagem */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; /* Opcional: para ajustar a imagem à tela */
+  font-family: "Gabarito", sans-serif;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.logo img {
+  width: clamp(3rem, 10vw, 7rem);
+  opacity: 0.9;
+  max-width: 15%;
+  height: auto;
+}
+
+/* Caixa principal do jogo */
+.conteudo-jogo {
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px #830101;
+  padding: 0rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  border: 0.3rem double #eb7b59;
+  flex-wrap: wrap;
+}
+
+/* Títulos e textos */
+h2,
+p {
+  color: #e5ddcb;
+}
+
+#butavan{
+  font-size: 1rem;
+  display: block;
+  margin-top: 1rem;
+  border: 0.1rem solid black;
+  font-weight: 600;
+}
+
+h2{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.titulo{
+  background-color: #fc0404;
+  text-align: center;
+  max-width: 50%;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: 0.2rem solid #524656;
+  height: auto;
+}
+
+.titulo:hover{
+  background-color: #524656;
+  border-color: #eb7b59;
+  color: #a7c5bd;
+}
+
+.titulo>h2{
+    text-shadow: 4px 4px 5px black;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+/* Estrutura do questionário */
+.questionario {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 90%;
+}
+
+/* Área de conteúdo */
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+/* Estilo da pergunta */
+.pergunta {
+  font-weight: 600;
+  color: #e5ddcb;
+  font-size: 1.7rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+/* Progresso da pergunta */
+.progresso {
+  text-align: end;
+  font-size: small;
+  font-weight: 500;
+  color: #e5ddcb;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+/* Área das respostas */
+.respostas {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Botões de resposta */
+.botao-resposta {
+  width: 100%;
+  height: 3.4rem;
+  text-align: start;
+  padding: 0.5rem;
+  border: 0.2rem solid #eb7b59;
+  cursor: pointer;
+  background: #e5ddcb;
+  color: black;
+  font-size: 1.0rem;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.botao-resposta:hover {
+  background: #524656;
+  color: #a7c5bd;
+}
+
+.porque{
+  color: #e5ddcb;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  width: 100%;
+  
+  padding: 0rem;
+  text-align: justify;
+}
+
+/* Tela de fim do jogo */
+.fim {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+  text-align: center;
+  height: 100%;
+  min-height: 40vh;
+}
+
+.fim span {
+  font-weight: 600;
+  color: #e5ddcb;
+  word-break: break-word;
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+/* Navegação entre perguntas */
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navegacao>button{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+}
+
+.navegacao>button:hover{
+  background-color: #524656;
+  color: #a7c5bd;
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 4rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .titulo {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .pergunta {
+    font-size: 1.2rem;
+  }
+
+  .fim span {
+    font-size: 2rem;
+  }
+
+  .porque {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .titulo {
+    width: 90%;
+  }
+
+  .titulo > h2 {
+    font-size: 1.5rem;
+  }
+
+  .porque {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .botao-resposta {
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 5rem;
+    top: 10%;
+    left: 85%;
+  }
+}

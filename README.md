@@ -2,7 +2,7 @@
 
 ## Link do GitHub Pages
 
-https://lucasmm77.github.io/SenaiQuiz/
+[https://lucasmm77.github.io/SenaiQuiz/](https://lucasmm77.github.io/senai-quiz/)
 
 ## Sobre o quiz
 
